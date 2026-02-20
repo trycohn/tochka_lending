@@ -57,25 +57,25 @@ function App() {
   };
 
   const mariaDocs = [
-    { type: 'img', src: '/images/diplom_maria.jpg', title: 'Диплом о высшем образовании' },
-    { type: 'img', src: '/images/svidetelstvo_maria.jpg', title: 'Свидетельство' },
-    { type: 'img', src: '/images/attestat_maria.jpg', title: 'Аттестат' },
-    { type: 'img', src: '/images/certificate.jpg', title: 'Сертификат' },
-    { type: 'img', src: '/images/cert_maria_igroki.jpg', title: 'Игроки, участвующие в психологических...' },
-    { type: 'img', src: '/images/cert_maria_primenenie.jpg', title: 'Применение в психологическом...' },
-    { type: 'img', src: '/images/cert_maria_transform.jpg', title: 'Психологические трансформационные...' },
-    { type: 'img', src: '/images/cert_maria_skazki.jpg', title: 'Юнгианский анализ сказок' },
+    { type: 'img', src: './images/diplom_maria.jpg', title: 'Диплом о высшем образовании' },
+    { type: 'img', src: './images/svidetelstvo_maria.jpg', title: 'Свидетельство' },
+    { type: 'img', src: './images/attestat_maria.jpg', title: 'Аттестат' },
+    { type: 'img', src: './images/certificate.jpg', title: 'Сертификат' },
+    { type: 'img', src: './images/cert_maria_igroki.jpg', title: 'Игроки, участвующие в психологических...' },
+    { type: 'img', src: './images/cert_maria_primenenie.jpg', title: 'Применение в психологическом...' },
+    { type: 'img', src: './images/cert_maria_transform.jpg', title: 'Психологические трансформационные...' },
+    { type: 'img', src: './images/cert_maria_skazki.jpg', title: 'Юнгианский анализ сказок' },
   ];
 
   const irinaDocs = [
-    { type: 'img', src: '/images/diplom_irina.jpg', title: 'Диплом' },
-    { type: 'img', src: '/images/ydostoverenie_irina.jpg', title: 'Удостоверение' },
-    { type: 'pdf', src: '/images/doc_irina_eot.pdf', title: 'ЭОТ' },
-    { type: 'pdf', src: '/images/doc_irina_klin_psih.pdf', title: 'Клиническая психология' },
-    { type: 'pdf', src: '/images/doc_irina_main.pdf', title: 'Основной документ' },
-    { type: 'pdf', src: '/images/doc_irina_perint.pdf', title: 'Перинатальные потери' },
-    { type: 'pdf', src: '/images/doc_irina_psihiatriya.pdf', title: 'Психиатрия' },
-    { type: 'pdf', src: '/images/doc_irina_sem_konf.pdf', title: 'Семейные конфликты' },
+    { type: 'img', src: './images/diplom_irina.jpg', title: 'Диплом' },
+    { type: 'img', src: './images/ydostoverenie_irina.jpg', title: 'Удостоверение' },
+    { type: 'pdf', src: './images/doc_irina_eot.pdf', title: 'ЭОТ' },
+    { type: 'pdf', src: './images/doc_irina_klin_psih.pdf', title: 'Клиническая психология' },
+    { type: 'pdf', src: './images/doc_irina_main.pdf', title: 'Основной документ' },
+    { type: 'pdf', src: './images/doc_irina_perint.pdf', title: 'Перинатальные потери' },
+    { type: 'pdf', src: './images/doc_irina_psihiatriya.pdf', title: 'Психиатрия' },
+    { type: 'pdf', src: './images/doc_irina_sem_konf.pdf', title: 'Семейные конфликты' },
   ];
 
   const DocCard = ({ doc }) => {
@@ -155,7 +155,7 @@ function App() {
             <div className="text-center">
               <div className="w-48 h-48 md:w-64 md:h-64 mx-auto mb-6 rounded-full overflow-hidden border-4 border-sand-100 shadow-inner">
                 <img 
-                  src="/images/photo_maria.jpg" 
+                  src="./images/photo_maria.jpg" 
                   alt="Горенкова Мария" 
                   className="w-full h-full object-cover"
                 />
@@ -168,7 +168,7 @@ function App() {
             <div className="text-center">
               <div className="w-48 h-48 md:w-64 md:h-64 mx-auto mb-6 rounded-full overflow-hidden border-4 border-sand-100 shadow-inner">
                 <img 
-                  src="/images/photo_irina.jpg" 
+                  src="./images/photo_irina.jpg" 
                   alt="Величко Ирина" 
                   className="w-full h-full object-cover"
                 />
@@ -470,7 +470,7 @@ function App() {
           <div className="mb-16">
             <div className="flex items-center gap-4 mb-8 justify-center md:justify-start">
               <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-sage-200">
-                 <img src="/images/photo_maria.jpg" className="w-full h-full object-cover" alt="Maria" />
+                 <img src="./images/photo_maria.jpg" className="w-full h-full object-cover" alt="Maria" />
               </div>
               <h3 className="text-2xl font-serif text-sage-800">Документы Марии</h3>
             </div>
@@ -484,7 +484,7 @@ function App() {
           <div>
             <div className="flex items-center gap-4 mb-8 justify-center md:justify-start">
               <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-sage-200">
-                 <img src="/images/photo_irina.jpg" className="w-full h-full object-cover" alt="Irina" />
+                 <img src="./images/photo_irina.jpg" className="w-full h-full object-cover" alt="Irina" />
               </div>
               <h3 className="text-2xl font-serif text-sage-800">Документы Ирины</h3>
             </div>

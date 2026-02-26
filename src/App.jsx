@@ -125,8 +125,8 @@ function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            <h2 className="text-sage-600 tracking-widest uppercase text-sm md:text-base mb-4 font-medium">
-              Проект психологической поддержки
+            <h2 className="text-black tracking-widest uppercase text-xl md:text-2xl mb-4 font-bold">
+              ПРОЕКТ ПСИХОЛОГИЧЕСКОЙ ПОДДЕРЖКИ
             </h2>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-gray-800 mb-6 leading-tight">
               Точка опоры
@@ -153,37 +153,37 @@ function App() {
           <div className="grid md:grid-cols-2 gap-12">
             {/* Maria */}
             <div className="text-center">
-              <div className="w-48 h-48 md:w-64 md:h-64 mx-auto mb-6 rounded-full overflow-hidden border-4 border-sand-100 shadow-inner">
+              <div className="w-48 h-64 md:w-64 md:h-80 mx-auto mb-6 rounded-2xl overflow-hidden border-4 border-sand-100 shadow-inner">
                 <img 
                   src="./images/photo_maria.jpg" 
-                  alt="Горенкова Мария" 
+                  alt="Мария Горенкова" 
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-2xl font-serif mb-2">Горенкова Мария</h3>
+              <h3 className="text-2xl font-serif mb-2">Мария Горенкова</h3>
               <p className="text-sage-600 uppercase tracking-widest text-sm mb-4">Психолог</p>
             </div>
 
             {/* Irina */}
             <div className="text-center">
-              <div className="w-48 h-48 md:w-64 md:h-64 mx-auto mb-6 rounded-full overflow-hidden border-4 border-sand-100 shadow-inner">
+              <div className="w-48 h-64 md:w-64 md:h-80 mx-auto mb-6 rounded-2xl overflow-hidden border-4 border-sand-100 shadow-inner">
                 <img 
                   src="./images/photo_irina.jpg" 
-                  alt="Величко Ирина" 
+                  alt="Ирина Величко" 
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-2xl font-serif mb-2">Величко Ирина</h3>
-              <p className="text-sage-600 uppercase tracking-widest text-sm mb-4">Психолог</p>
+              <h3 className="text-2xl font-serif mb-2">Ирина Величко</h3>
+              <p className="text-sage-600 uppercase tracking-widest text-sm mb-4">Интегративный психолог</p>
             </div>
           </div>
 
           <div className="mt-12 text-center max-w-2xl mx-auto space-y-6">
             <p className="text-lg">
-              Мы — квалифицированные психологи. И мы — женщины, которые сами прошли через развод и глубокий личный кризис.
+              Мы дипломированные психологи и женщины, которые сами прошли через развод и глубокий личный кризис.
             </p>
             <p className="text-lg">
-              Мы понимаем, как это ощущается изнутри. И при этом в группе мы остаёмся в профессиональной роли — создаём безопасное пространство, держим структуру и бережно сопровождаем процесс.
+              Мы хорошо понимаем, через какие чувства и состояния проходит женщина в этот период. В группе мы остаёмся в профессиональной роли. Создаём безопасное пространство и сопровождаем каждую участницу с пониманием и поддержкой.
             </p>
           </div>
         </FadeIn>
@@ -193,74 +193,54 @@ function App() {
       <Section>
         <FadeIn>
           <div className="text-center max-w-3xl mx-auto space-y-8">
-            <p className="text-2xl md:text-3xl font-serif italic text-gray-500">
+            <p className="text-2xl md:text-3xl font-serif text-gray-700 font-medium">
               Иногда жизнь делится на «до» и «после».
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-8">
-              <div className="bg-white p-8 rounded-2xl shadow-sm border border-sand-100">
-                <ul className="space-y-4 text-left text-lg text-gray-600">
-                  <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-sage-400"/>Развод</li>
-                  <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-sage-400"/>Расставание</li>
-                  <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-sage-400"/>Разрушенные ожидания</li>
-                  <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-sage-400"/>Потерянная опора</li>
-                </ul>
-              </div>
-              <div className="flex flex-col justify-center text-left space-y-4">
-                <p>
-                  В такие моменты особенно остро ощущается одиночество. Даже если рядом есть люди — внутри может быть очень пусто, тревожно и больно.
-                </p>
-                <p className="font-medium text-sage-700">
-                  Проект «Точка опоры» создан для того, чтобы в этот непростой период вы не оставались с этим состоянием один на один.
-                </p>
-              </div>
+            <div className="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-sand-100 text-left space-y-6 text-lg text-gray-700 leading-relaxed">
+              <p>
+                В такие моменты особенно остро ощущается одиночество. Даже если рядом есть люди — внутри может быть очень пусто, тревожно и больно.
+              </p>
+              <p>
+                Проект «Точка опоры» создан для того, чтобы в этот непростой период вы не оставались с этим состоянием один на один.
+              </p>
+              <p>
+                Это не про быстрые решения.<br/>
+                Не про советы «отпустить и идти дальше».<br/>
+                И не про попытки вернуть отношения.
+              </p>
+              <p>
+                Это пространство, где можно выдохнуть и постепенно начать возвращаться к себе.
+              </p>
             </div>
           </div>
         </FadeIn>
       </Section>
 
-      {/* Philosophy */}
-      <section className="bg-sage-50 py-16 md:py-24">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <FadeIn>
-            <div className="space-y-6 text-lg md:text-xl leading-relaxed">
-              <p>Это не про быстрые решения.</p>
-              <p>Не про советы «отпустить и идти дальше».</p>
-              <p>И не про попытки вернуть отношения.</p>
-              <div className="w-16 h-px bg-sage-300 mx-auto my-8"></div>
-              <p className="text-2xl md:text-3xl font-serif text-sage-800">
-                Это пространство, где можно замедлиться, выдохнуть и постепенно начать возвращаться к себе.
-              </p>
-            </div>
-          </FadeIn>
-        </div>
-      </section>
-
       {/* For Whom */}
       <Section>
         <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-serif text-center mb-12">Для кого этот проект</h2>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-4">
+          <div className="bg-sand-100 p-8 md:p-12 rounded-3xl max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-serif text-center mb-8">Для кого этот проект</h2>
+            <p className="text-xl mb-6 font-medium text-gray-800">Для женщин, которые сейчас:</p>
+            <div className="space-y-4 mb-8">
               {[
-                "Находятся в процессе развода",
-                "Уже расстались и переживают последствия",
-                "Испытывают сильные перепады эмоций — от гнева до апатии",
-                "Чувствуют тревогу за будущее",
-                "Сомневаются в себе",
-                "Теряют ощущение опоры",
-                "Хотят прожить этот период более осознанно и бережно к себе"
+                "находятся в процессе развода",
+                "уже расстались, но внутренне не завершили эти отношения",
+                "испытывают сильные перепады эмоций — от гнева до апатии",
+                "чувствуют тревогу за будущее",
+                "сомневаются в себе",
+                "теряют ощущение опоры",
+                "хотят прожить этот период более осознанно и бережно к себе"
               ].map((item, i) => (
-                <div key={i} className="flex items-start gap-3">
-                  <CheckCircle2 className="text-sage-500 mt-1 shrink-0" size={20} />
-                  <span className="text-lg">{item}</span>
+                <div key={i} className="flex items-start gap-3 pl-2">
+                  <span className="text-sage-600 font-bold text-xl leading-none mt-1">•</span>
+                  <span className="text-lg text-gray-700">{item}</span>
                 </div>
               ))}
             </div>
-            <div className="bg-sand-100 p-8 rounded-3xl text-center md:text-left">
-              <p className="text-xl font-serif italic text-sage-800">
-                «Если вам важно не просто "пережить", а понять, что с вами происходит, — этот формат может подойти.»
-              </p>
-            </div>
+            <p className="text-xl font-serif italic text-sage-800 text-center border-t border-sage-200 pt-8 mt-8">
+              Если вам важно не просто «пережить», а понять, что с вами происходит, этот формат может подойти.
+            </p>
           </div>
         </FadeIn>
       </Section>
@@ -279,7 +259,7 @@ function App() {
                 <Users size={24} />
               </div>
               <h3 className="font-serif text-xl mb-2">Закрытая группа</h3>
-              <p className="text-sm text-gray-500">До 10 участниц, где каждая может быть услышана и принята</p>
+              <p className="text-sm text-gray-500">До 10 участниц</p>
             </div>
             <div className="p-6">
               <div className="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center mx-auto mb-4 text-sage-600">
@@ -303,13 +283,13 @@ function App() {
       <section className="py-16 bg-sage-800 text-sand-50">
         <div className="max-w-4xl mx-auto px-4">
           <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-serif text-center mb-12">Как проходят встречи</h2>
+            <h2 className="text-3xl md:text-4xl font-serif text-center mb-12">Как проходят встречи (онлайн)</h2>
             <div className="space-y-8">
               <div className="flex gap-6">
                 <div className="text-sage-300 font-serif text-5xl opacity-50">01</div>
                 <div>
                   <h3 className="text-xl font-medium mb-2">Круг входа</h3>
-                  <p className="text-sage-100 font-light">Небольшое пространство, где каждая может поделиться своим состоянием. Это помогает почувствовать, что вы не одна.</p>
+                  <p className="text-sage-100 font-light">Небольшое пространство, где каждая может поделиться своей историей. Это помогает почувствовать, что вы не одна.</p>
                 </div>
               </div>
               <div className="flex gap-6">
@@ -329,7 +309,7 @@ function App() {
               <div className="flex gap-6">
                 <div className="text-sage-300 font-serif text-5xl opacity-50">04</div>
                 <div>
-                  <h3 className="text-xl font-medium mb-2">Завершение и интеграция</h3>
+                  <h3 className="text-xl font-medium mb-2">Завершение и рефлексия</h3>
                   <p className="text-sage-100 font-light">Чтобы вы не уходили в тревоге, а выходили в более устойчивом состоянии.</p>
                 </div>
               </div>
@@ -341,8 +321,8 @@ function App() {
       {/* Topics */}
       <Section>
         <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-serif text-center mb-12">С чем мы работаем</h2>
-          <div className="flex flex-wrap justify-center gap-4">
+          <h2 className="text-3xl md:text-4xl font-serif text-center mb-12">С чем мы работаем в течение 21 дня</h2>
+          <div className="flex flex-col gap-4 max-w-xl mx-auto">
             {[
               "Проживание боли и утраты",
               "Тревога и страх перед будущим",
@@ -352,39 +332,17 @@ function App() {
               "Восстановление самоценности",
               "Личные границы",
               "Поиск новой внутренней опоры"
-            ].map((tag, i) => (
-              <span key={i} className="px-6 py-3 bg-white border border-sand-200 rounded-full text-gray-600 shadow-sm">
-                {tag}
-              </span>
+            ].map((item, i) => (
+              <div key={i} className="flex items-center gap-4 p-4 bg-white border border-sand-100 rounded-xl shadow-sm">
+                <div className="w-2 h-2 rounded-full bg-sage-400 shrink-0" />
+                <span className="text-lg text-gray-700">{item}</span>
+              </div>
             ))}
           </div>
           <p className="text-center mt-12 text-xl font-serif text-sage-700">
             Наша задача — не изменить вашу жизнь за три недели, <br />
             а помочь вам пройти этот этап более устойчиво и осознанно.
           </p>
-        </FadeIn>
-      </Section>
-
-      {/* Important Accents */}
-      <Section>
-        <FadeIn>
-          <div className="bg-sage-50 border-l-4 border-sage-400 p-8 md:p-12 rounded-r-xl">
-            <h3 className="text-2xl font-serif mb-6">Важные акценты</h3>
-            <ul className="space-y-4 text-lg">
-              <li className="flex items-center gap-3">
-                <span className="text-sage-400">•</span> Мы не обещаем вернуть мужа.
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="text-sage-400">•</span> Мы не даём универсальных рецептов счастья.
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="text-sage-400">•</span> Мы не обесцениваем ваши чувства.
-              </li>
-            </ul>
-            <p className="mt-8 font-medium text-sage-800">
-              Мы создаём пространство поддержки, принятия и профессионального сопровождения в период кризиса.
-            </p>
-          </div>
         </FadeIn>
       </Section>
 
@@ -428,7 +386,7 @@ function App() {
                 <li className="flex items-center gap-3"><CheckCircle2 size={18} className="text-sage-500"/> Начать лучше понимать свои реакции</li>
                 <li className="flex items-center gap-3"><CheckCircle2 size={18} className="text-sage-500"/> Снизить уровень тревоги</li>
                 <li className="flex items-center gap-3"><CheckCircle2 size={18} className="text-sage-500"/> Вернуть ощущение «я есть»</li>
-                <li className="flex items-center gap-3"><CheckCircle2 size={18} className="text-sage-500"/> Увидеть, что впереди есть жизнь — не только боль</li>
+                <li className="flex items-center gap-3"><CheckCircle2 size={18} className="text-sage-500"/> Увидеть, что впереди есть жизнь</li>
               </ul>
               <p className="pt-8 font-serif text-2xl text-sage-700">
                 Иногда всё, что нужно в сложный период — это опора и поддержка.
@@ -472,7 +430,7 @@ function App() {
               <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-sage-200">
                  <img src="./images/photo_maria.jpg" className="w-full h-full object-cover" alt="Maria" />
               </div>
-              <h3 className="text-2xl font-serif text-sage-800">Документы Марии</h3>
+              <h3 className="text-2xl font-serif text-sage-800">Мария Горенкова</h3>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
               {mariaDocs.map((doc, i) => (
@@ -486,7 +444,7 @@ function App() {
               <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-sage-200">
                  <img src="./images/photo_irina.jpg" className="w-full h-full object-cover" alt="Irina" />
               </div>
-              <h3 className="text-2xl font-serif text-sage-800">Документы Ирины</h3>
+              <h3 className="text-2xl font-serif text-sage-800">Ирина Величко</h3>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
               {irinaDocs.map((doc, i) => (

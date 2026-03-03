@@ -113,7 +113,16 @@ function App() {
 
   return (
     <div className="min-h-screen bg-sand-50 text-gray-700 overflow-x-hidden font-sans selection:bg-sage-200">
-      {/* Hero Section */}
+      {/* Hero Section - Temporary replaced by Image */}
+      <section className="w-full cursor-pointer bg-[#D5C1B5]/20" onClick={scrollToPrice}>
+        <img 
+          src="./images/IMG_6746.jpg" 
+          alt="Точка опоры" 
+          className="w-full h-auto object-cover max-w-2xl mx-auto shadow-xl md:rounded-b-3xl"
+        />
+      </section>
+
+      {/* Original Hero Section (Hidden as requested)
       <header className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-b from-sage-100/50 to-sand-50 overflow-hidden">
         <div className="absolute inset-0 opacity-30 pointer-events-none">
           <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] rounded-full bg-sage-200 blur-[100px]" />
@@ -145,6 +154,7 @@ function App() {
           </motion.div>
         </div>
       </header>
+      */}
 
       {/* Hosts */}
       <Section className="bg-white rounded-3xl shadow-lg p-8 md:p-12 my-12">

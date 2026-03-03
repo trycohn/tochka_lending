@@ -70,12 +70,13 @@ function App() {
   const irinaDocs = [
     { type: 'img', src: './images/diplom_irina.jpg', title: 'Диплом' },
     { type: 'img', src: './images/ydostoverenie_irina.jpg', title: 'Удостоверение' },
-    { type: 'pdf', src: './images/doc_irina_eot.pdf', title: 'ЭОТ' },
-    { type: 'pdf', src: './images/doc_irina_klin_psih.pdf', title: 'Клиническая психология' },
-    { type: 'pdf', src: './images/doc_irina_main.pdf', title: 'Основной документ' },
-    { type: 'pdf', src: './images/doc_irina_perint.pdf', title: 'Перинатальные потери' },
-    { type: 'pdf', src: './images/doc_irina_psihiatriya.pdf', title: 'Психиатрия' },
-    { type: 'pdf', src: './images/doc_irina_sem_konf.pdf', title: 'Семейные конфликты' },
+    { type: 'img', src: './images/diploma_irina_clinical.jpg', title: 'Клиническая психология (Диплом)' },
+    { type: 'img', src: './images/cert_irina_clinical_sootv.jpg', title: 'Клинический психолог (Сертификат)' },
+    { type: 'img', src: './images/cert_irina_sot.jpg', title: 'Системно-образная терапия' },
+    { type: 'img', src: './images/cert_irina_family.jpg', title: 'Семейные конфликты' },
+    { type: 'img', src: './images/cert_irina_psychiatry.jpg', title: 'Психиатрия для психологов' },
+    { type: 'img', src: './images/cert_irina_perinatal.jpg', title: 'Перинатальные потери' },
+    { type: 'img', src: './images/cert_irina_appp.jpg', title: 'Свидетельство АППП' },
   ];
 
   const DocCard = ({ doc }) => {
@@ -161,7 +162,7 @@ function App() {
                 />
               </div>
               <h3 className="text-2xl font-serif mb-2">Мария Горенкова</h3>
-              <p className="text-sage-600 uppercase tracking-widest text-sm mb-4">Психолог</p>
+              <p className="text-sage-600 uppercase tracking-widest text-sm mb-4">Психолог, специалист по трансперсональному консультированию и психотерапии</p>
             </div>
 
             {/* Irina */}

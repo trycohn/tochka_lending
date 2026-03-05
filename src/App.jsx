@@ -113,48 +113,79 @@ function App() {
 
   return (
     <div className="min-h-screen bg-sand-50 text-gray-700 overflow-x-hidden font-sans selection:bg-sage-200">
-      {/* Hero Section - Temporary replaced by Image */}
-      <section className="w-full cursor-pointer bg-[#D5C1B5]/20" onClick={scrollToPrice}>
-        <img 
-          src="./images/IMG_6746.jpg" 
-          alt="Точка опоры" 
-          className="w-full h-auto object-cover max-w-2xl mx-auto shadow-xl md:rounded-b-3xl"
-        />
-      </section>
+      {/* Hero Section */}
+      <header 
+        className="relative min-h-screen flex flex-col items-center justify-between pt-12 pb-8 px-4 bg-cover bg-[53%_center] md:bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('./images/1231.png')" }}
+      >
+        {/* Semi-transparent overlay to make white text more readable */}
+        <div className="absolute inset-0 bg-black/10 pointer-events-none" />
 
-      {/* Original Hero Section (Hidden as requested)
-      <header className="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-b from-sage-100/50 to-sand-50 overflow-hidden">
-        <div className="absolute inset-0 opacity-30 pointer-events-none">
-          <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] rounded-full bg-sage-200 blur-[100px]" />
-          <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] rounded-full bg-sand-300 blur-[100px]" />
-        </div>
+        <div className="relative z-10 w-full max-w-5xl flex flex-col h-full grow">
+          {/* Top text block */}
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="text-center mt-4 md:mt-8"
+          >
+            <h2 className="text-[#654e3f] tracking-widest uppercase text-sm md:text-lg font-bold mb-4 drop-shadow-sm">
+              ПРОЕКТ ПСИХОЛОГИЧЕСКОЙ ПОДДЕРЖКИ
+            </h2>
+            <h1 className="text-7xl md:text-9xl lg:text-[140px] font-script text-white mb-6 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
+              Точка опоры
+            </h1>
+            <p className="text-[#654e3f] uppercase tracking-wide text-xs md:text-xl font-bold max-w-2xl mx-auto drop-shadow-sm">
+              21 ДЕНЬ ПОДДЕРЖКИ ДЛЯ ЖЕНЩИН ПОСЛЕ РАЗВОДА
+            </p>
+          </motion.div>
 
-        <div className="relative z-10 text-center max-w-4xl px-4">
+          {/* List block */}
+          <motion.div 
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            className="flex-grow flex flex-col justify-center mt-12 md:mt-0"
+          >
+            <div className="space-y-6 md:space-y-8 max-w-md">
+              {[
+                "6 онлайн-встреч",
+                "Психологическая помощь",
+                "Поддержка и забота"
+              ].map((text, i) => (
+                <div key={i} className="flex items-center gap-4">
+                  <div className="w-8 h-8 rounded-full border-2 border-[#7a6452] flex items-center justify-center shrink-0 bg-white/40">
+                    <svg viewBox="0 0 24 24" className="w-5 h-5 text-[#5c6e58] fill-current" fill="currentColor">
+                      <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z" />
+                    </svg>
+                  </div>
+                  <span className="text-[#4a3525] text-xl md:text-2xl font-bold drop-shadow-sm">{text}</span>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Bottom block: Button & Footer text */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 1, delay: 0.6 }}
+            className="text-center mt-auto pb-4 pt-12 flex flex-col items-center gap-6"
           >
-            <h2 className="text-black tracking-widest uppercase text-xl md:text-2xl mb-4 font-bold">
-              ПРОЕКТ ПСИХОЛОГИЧЕСКОЙ ПОДДЕРЖКИ
-            </h2>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-gray-800 mb-6 leading-tight">
-              Точка опоры
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-600 font-light mb-10 max-w-2xl mx-auto leading-relaxed">
-              21 день бережной поддержки для женщин <br className="hidden md:block" />
-              в период развода и расставания
-            </p>
             <button 
               onClick={scrollToPrice}
-              className="bg-sage-600 hover:bg-sage-700 text-white text-lg px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 flex items-center gap-2 mx-auto"
+              className="bg-gradient-to-r from-[#fbe3c7] via-[#f0cfa3] to-[#fbe3c7] hover:from-[#f0cfa3] hover:to-[#e8bd89] text-[#5c3e26] text-xl md:text-2xl font-bold px-12 py-4 md:py-5 rounded-full transition-all duration-300 shadow-[0_15px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] hover:-translate-y-1 w-[90%] md:w-auto max-w-md relative overflow-hidden group"
             >
-              Стать участником <ArrowRight size={20} />
+              {/* Inner glow effect */}
+              <div className="absolute inset-0 rounded-full border border-white/50 group-hover:border-white/80 transition-colors"></div>
+              <span className="relative z-10 drop-shadow-sm">Начать путь к себе</span>
             </button>
+            <p className="font-script text-4xl md:text-5xl text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">
+              Вы не одна в этот сложный период
+            </p>
           </motion.div>
         </div>
       </header>
-      */}
 
       {/* Hosts */}
       <Section className="bg-white rounded-3xl shadow-lg p-8 md:p-12 my-12">

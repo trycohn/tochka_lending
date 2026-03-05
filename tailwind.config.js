@@ -47,6 +47,7 @@ export default {
       fontFamily: {
         serif: ['"Cormorant Garamond"', 'serif'],
         sans: ['"Montserrat"', 'sans-serif'],
+        script: ['"Marck Script"', 'cursive'],
       },
       boxShadow: {
         'soft': '0 20px 40px -15px rgba(0,0,0,0.05)',
